@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دليل الترقيات العلمية 2025 | موقع تفاعلي</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --ink:#152033;
+      --muted:#667085;
+      --brand:#0f766e;
+      --brand2:#0ea5a3;
+      --accent:#f59e0b;
+      --red:#dc2626;
+      --green:#16a34a;
+      --line:#e5e7eb;
+      --soft:#ecfeff;
+      --shadow:0 18px 50px rgba(15,23,42,.10);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: "Tahoma","Arial",sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,163,.14), transparent 34rem),
+        radial-gradient(circle at bottom left, rgba(245,158,11,.13), transparent 30rem),
+        var(--bg);
+      color:var(--ink);
+      line-height:1.85;
+    }
+    a{color:var(--brand);text-decoration:none}
+    .app-shell{min-height:100vh}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+    .wrap{max-width:1180px;margin:auto;padding:0 20px}
+    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:74px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{
+      width:46px;height:46px;border-radius:16px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      color:white;box-shadow:0 10px 25px rgba(15,118,110,.28)
+    }
+    .brand small{display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:-5px}
+    .nav{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+    .nav a,.btn{
+      border:1px solid var(--line);
+      background:white;
+      color:var(--ink);
+      padding:9px 13px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:14px;
+      transition:.2s ease;
+      display:inline-flex;align-items:center;gap:8px;
+    }
+    .nav a:hover,.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(15,23,42,.08)}
+    .btn.primary,.nav a.active{background:var(--brand);color:white;border-color:var(--brand)}
+    .btn.ghost{background:transparent}
+    .btn.warn{background:var(--accent);border-color:var(--accent);color:#241400}
+    .hero{padding:54px 0 22px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}
+    .hero-card,.card{
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(229,231,235,.85);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-card{padding:34px;overflow:hidden;position:relative}
+    .hero-card:before{
+      content:"";position:absolute;inset:auto -60px -90px auto;
+      width:280px;height:280px;border-radius:50%;
+      background:rgba(14,165,163,.12);
+    }
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--brand);border:1px solid #bff5f4;border-radius:999px;padding:6px 12px;font-weight:800;font-size:13px}
+    h1{font-size:clamp(32px,5vw,58px);line-height:1.18;margin:18px 0 14px;letter-spacing:-.5px}
+    h2{font-size:28px;margin:0 0 10px}
+    h3{margin:0 0 8px;font-size:20px}
+    p{margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+    .stat{background:#f8fafc;border:1px solid var(--line);border-radius:18px;padding:14px}
+    .stat strong{font-size:25px;display:block;color:var(--brand)}
+    .phone{
+      padding:22px;background:#07111f;color:white;border-radius:var(--radius);box-shadow:var(--shadow);
+      display:flex;flex-direction:column;gap:14px;min-height:100%;
+    }
+    .phone-screen{
+      background:white;color:var(--ink);border-radius:18px;padding:18px;flex:1;overflow:hidden
+    }
+    .mini-line{height:10px;background:#e5e7eb;border-radius:99px;margin:10px 0}
+    .mini-line.w50{width:50%}.mini-line.w70{width:70%}.mini-line.w90{width:90%}
+    .section{padding:26px 0}
+    .card{padding:24px;margin-bottom:18px}
+    .grid{display:grid;gap:18px}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .rank-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}
+    .rank-card .num{font-size:32px;color:var(--brand);font-weight:900}
+    .form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    label{display:block;font-weight:800;margin-bottom:6px}
+    input,select,textarea{
+      width:100%;
+      border:1px solid #d1d5db;
+      border-radius:14px;
+      padding:11px 12px;
+      font:inherit;
+      background:#fff;
+      color:var(--ink);
+      outline:none;
+    }
+    textarea{min-height:100px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(15,118,110,.12)}
+    .result{
+      border-radius:18px;padding:16px;margin-top:14px;
+      background:#f8fafc;border:1px solid var(--line)
+    }
+    .result.good{background:#ecfdf5;border-color:#bbf7d0;color:#14532d}
+    .result.bad{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+    .result.warn{background:#fffbeb;border-color:#fde68a;color:#78350f}
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--line)}
+    th,td{padding:12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:middle}
+    th{background:#f1f5f9;font-weight:900}
+    tr:last-child td{border-bottom:none}
+    .pill{display:inline-flex;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:900;background:#eef2ff;color:#3730a3}
+    .pill.green{background:#dcfce7;color:#166534}
+    .pill.red{background:#fee2e2;color:#991b1b}
+    .actions-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .research-list{display:grid;gap:10px}
+    .research-row{
+      display:grid;grid-template-columns:1.2fr 1fr .8fr auto;gap:10px;align-items:end;
+      padding:12px;border:1px solid var(--line);border-radius:16px;background:#fbfdff
+    }
+    .checklist{columns:2;column-gap:24px}
+    .check-item{break-inside:avoid;display:flex;gap:10px;align-items:flex-start;border-bottom:1px dashed var(--line);padding:9px 0}
+    .check-item input{width:auto;margin-top:8px}
+    .timeline{position:relative;display:grid;gap:12px}
+    .step{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+    .step .dot{width:44px;height:44px;border-radius:15px;background:var(--brand);color:white;display:grid;place-items:center;font-weight:900}
+    .step .body{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+    .tab{padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:white;cursor:pointer;font-weight:800}
+    .tab.active{background:var(--brand);color:white;border-color:var(--brand)}
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+    .searchbox{position:relative}
+    .qa-item{display:none;border:1px solid var(--line);border-radius:16px;background:#fff;padding:14px;margin-top:10px}
+    .qa-item.show{display:block}
+    .preview-bar{
+      background:#0f172a;color:white;border-radius:22px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap
+    }
+    .footer{padding:28px 0 44px;color:var(--muted);font-size:14px}
+    .notice{font-size:13px;background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:12px;margin-top:12px}
+    .print-card{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:14px}
+    @media (max-width:900px){
+      .hero-grid,.grid.two,.grid.three,.form-grid{grid-template-columns:1fr}
+      .research-row{grid-template-columns:1fr}
+      .checklist{columns:1}
+      .topbar .wrap{align-items:flex-start;flex-direction:column;padding:12px 20px}
+      .hero{padding-top:28px}
+    }
+    @media print{
+      .topbar,.hero,.nav,.btn,.actions-row,.preview-bar,.footer{display:none!important}
+      body{background:white}
+      .card,.hero-card{box-shadow:none;border:0}
+    }
+  
+    body{width:100%;max-width:none;overflow-x:hidden}
+    .app-shell,.wrap{width:100%}
+    @media (max-width:700px){
+      .wrap{padding:0 14px}
+      h1{font-size:30px}
+      .hero-card,.card{padding:18px;border-radius:18px}
+      .stats{grid-template-columns:1fr}
+      .nav a,.btn{font-size:13px;padding:8px 11px}
+    }
+  </style>
+</head>
+<body>
+<div id="fullscreenHint" style="position:fixed;left:16px;bottom:16px;z-index:9999;background:#0f766e;color:white;padding:10px 14px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.18);font-family:Tahoma,Arial,sans-serif;font-weight:700">
+  للمعاينة المريحة: افتح الملف في تبويب مستقل أو حمّله وافتح index.html
+</div>
+<script>
+setTimeout(()=>{const x=document.getElementById('fullscreenHint'); if(x) x.style.display='none'},8000);
+</script>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">تر</div>
+        <div>
+          دليل الترقيات العلمية 2025
+          <small>موقع تفاعلي للتجربة قبل النشر على GitHub Pages</small>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#eligibility">الاستحقاق</a>
+        <a href="#points">النقاط</a>
+        <a href="#requirements">المستندات</a>
+        <a href="#workflow">المسار</a>
+        <a href="#forms">النماذج</a>
+        <a href="#qa">سؤال وجواب</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-card">
+          <span class="badge">نسخة أولية قابلة للتعديل • تعليمات 2025</span>
+          <h1>منظومة مبسطة لفهم شروط الترقية العلمية وحساب النقاط</h1>
+          <p class="muted">هذه نسخة Static Website تعمل مباشرة من المتصفح، ويمكن رفعها لاحقاً على GitHub Pages. صممت لتجربة الاستحقاق، حساب نقاط البحوث، متابعة مستندات المعاملة، وتوليد طلب ترقية أولي.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#eligibility">ابدأ حاسبة الاستحقاق</a>
+            <a class="btn" href="#points">حاسبة النقاط</a>
+            <button class="btn ghost" onclick="window.print()">طباعة الصفحة</button>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>3</strong><span>سنوات إلى مدرس</span></div>
+            <div class="stat"><strong>70</strong><span>نقطة للترقية إلى مدرس</span></div>
+            <div class="stat"><strong>4</strong><span>ملفات رئيسية للمعاملة</span></div>
+          </div>
+          <div class="notice">ملاحظة: هذه الأداة مساعدة وليست بديلاً عن تدقيق لجنة الترقيات أو التعليمات الرسمية والاعمامات النافذة.</div>
+        </div>
+        <div class="phone">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>معاينة واجهة الموقع</strong>
+            <span style="opacity:.7">● ● ●</span>
+          </div>
+          <div class="phone-screen">
+            <span class="pill green">نتيجة تجريبية</span>
+            <h3>مدرس مساعد → مدرس</h3>
+            <p class="muted">تاريخ اللقب: 2023/04/03</p>
+            <div class="mini-line w90"></div>
+            <div class="mini-line w70"></div>
+            <div class="mini-line w50"></div>
+            <div class="result good">مستوفٍ شرط المدة بعد 2026/04/03</div>
+            <div class="result warn">تحتاج إلى إكمال 24 نقطة من الجدول الثاني إذا كانت نقاط جدول 1 مكتملة.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="eligibility" class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>حاسبة الاستحقاق الزمني والنقاط الأساسية</h2>
+          <p class="muted">اختر اللقب الحالي وتاريخ الحصول عليه، ثم أدخل نقاط الجدولين لمعرفة النتيجة الأولية.</p>
+          <div class="result" id="globalPointsSummary">
+            <strong>المجموع الحالي:</strong>
+            جدول 1 = <span id="topT1">0</span> نقطة،
+            جدول 2 = <span id="topT2">0</span> نقطة،
+            الكلي = <span id="topTotal">0</span> نقطة.
+          </div>
+          <div class="card" style="box-shadow:none;background:#f8fafc;margin:14px 0;border-radius:18px" id="bonusPanel">
+            <h3>استثناء إضافة 5% للمناصب المشمولة</h3>
+            <p class="muted">تُضاف 5% من مجموع نقاط الجدولين لغرض استكمال النقاط فقط، وعن منصب واحد، بشرط شغل نصف مدة الترقية والاستمرار بالمنصب عند التقديم.</p>
+            <div class="form-grid">
+              <div>
+                <label>هل لديك منصب مشمول؟</label>
+                <select id="hasPositionBonus" onchange="syncTopSummary();calcEligibility()">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+              <div>
+                <label>نوع المنصب</label>
+                <select id="positionType" onchange="syncTopSummary();calcEligibility()">
+                  <option value="مدير عام">مدير عام</option>
+                  <option value="عميد كلية أو من بدرجته">عميد كلية أو من بدرجته</option>
+                  <option value="معاون عميد">معاون عميد</option>
+                  <option value="رئيس مجلس علمي في المجلس العراقي للاختصاصات الطبية">رئيس مجلس علمي في المجلس العراقي للاختصاصات الطبية</option>
+                  <option value="معاون مدير عام">معاون مدير عام</option>
+                  <option value="مدير قسم في مركز الوزارة أو من بدرجته">مدير قسم في مركز الوزارة أو من بدرجته</option>
+                  <option value="رئيس قسم علمي / رئيس فرع علمي">رئيس قسم علمي / رئيس فرع علمي</option>
+                  <option value="مقرر قسم علمي للدراسات الأولية أو العليا">مقرر قسم علمي للدراسات الأولية أو العليا</option>
+                  <option value="عضو لجنة وزارية دائمة">عضو لجنة وزارية دائمة</option>
+                  <option value="مدير مركز بحثي">مدير مركز بحثي</option>
+                  <option value="مسؤول شعبة أو وحدة إدارية">مسؤول شعبة أو وحدة إدارية</option>
+                </select>
+              </div>
+              <div>
+                <label>هل أمضيت نصف مدة الترقية في المنصب؟</label>
+                <select id="positionHalfDuration" onchange="syncTopSummary();calcEligibility()">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+              <div>
+                <label>هل أنت مستمر بالمنصب عند التقديم؟</label>
+                <select id="positionCurrent" onchange="syncTopSummary();calcEligibility()">
+                  <option value="no">لا</option>
+                  <option value="yes">نعم</option>
+                </select>
+              </div>
+              <div>
+                <label>قيمة إضافة 5%</label>
+                <input id="bonusValueView" readonly value="0" />
+              </div>
+              <div>
+                <label>حالة الإضافة</label>
+                <input id="bonusStatusView" readonly value="غير محتسبة" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label>اللقب الحالي</label>
+              <select id="rank">
+                <option value="assistant_lecturer">مدرس مساعد</option>
+                <option value="lecturer">مدرس</option>
+                <option value="assistant_professor">أستاذ مساعد</option>
+              </select>
+            </div>
+            <div>
+              <label>تاريخ الحصول على اللقب الحالي</label>
+              <input id="rankDate" type="date" value="2023-04-03" />
+            </div>
+            <div>
+              <label>تاريخ اليوم / تاريخ التقديم</label>
+              <input id="todayDate" type="date" />
+            </div>
+            <div>
+              <label>نقاط الجدول رقم 1</label>
+              <input id="table1Input" type="number" min="0" step="0.5" value="0" />
+            </div>
+            <div>
+              <label>نقاط الجدول رقم 2</label>
+              <input id="table2Input" type="number" min="0" step="0.5" value="0" />
+            </div>
+            <div>
+              <label>الإضافة الخارجية</label>
+              <input readonly value="تُحسب من لوحة المناصب المشمولة أعلاه" />
+            </div>
+          </div>
+          <div class="actions-row">
+            <button class="btn primary" onclick="calcEligibility()">احسب الاستحقاق</button>
+            <button class="btn" onclick="fillExample()">تعبئة مثال المستخدم</button>
+          </div>
+          <div id="eligibilityResult" class="result">أدخل البيانات ثم اضغط زر الحساب.</div>
+        </div>
+
+        <div class="grid three">
+          <div class="rank-card">
+            <div class="num">مدرس</div>
+            <p>من مدرس مساعد: مدة لا تقل عن 3 سنوات، مجموع 70 نقطة، منها 46 من جدول 1 و24 من جدول 2.</p>
+          </div>
+          <div class="rank-card">
+            <div class="num">أستاذ مساعد</div>
+            <p>من مدرس: مدة لا تقل عن 4 سنوات، مجموع 80 نقطة، منها 52 من جدول 1 و28 من جدول 2.</p>
+          </div>
+          <div class="rank-card">
+            <div class="num">أستاذ</div>
+            <p>من أستاذ مساعد: مدة لا تقل عن 6 سنوات، مجموع 90 نقطة، منها 59 من جدول 1 و31 من جدول 2.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="points" class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>حاسبة نقاط البحوث المشتركة - الجدول رقم 1</h2>
+          <p class="muted">أضف البحوث واختر نوع المجلة وترتيبك. الحاسبة تطبق نقاط الجدول رقم 1 بحسب المرتبة المطلوبة.</p>
+          <div class="form-grid">
+            <div>
+              <label>الترقية المطلوبة</label>
+              <select id="targetRank" onchange="recalcResearch()">
+                <option value="lecturer">إلى مدرس</option>
+                <option value="assistant_professor">إلى أستاذ مساعد</option>
+                <option value="professor">إلى أستاذ</option>
+              </select>
+            </div>
+            <div>
+              <label>نوع البحث الافتراضي</label>
+              <select id="defaultType">
+                <option value="if">مجلة ذات IF أو CiteScore</option>
+                <option value="iraqi">مجلة عراقية معتمدة</option>
+              </select>
+            </div>
+            <div>
+              <label>إجراء سريع</label>
+              <button class="btn primary" style="width:100%;justify-content:center" onclick="addResearch()">إضافة بحث</button>
+            </div>
+          </div>
+          <div id="researchList" class="research-list" style="margin-top:14px"></div>
+          <div class="actions-row">
+            <button class="btn" onclick="addUserScenario()">مثال: الأول + الثاني + الثالث</button>
+            <button class="btn ghost" onclick="clearResearch()">مسح البحوث</button>
+          </div>
+          <div id="researchResult" class="result">لم تتم إضافة بحوث بعد.</div>
+          <div style="overflow:auto;margin-top:16px">
+            <table>
+              <thead><tr><th>نوع المجلة</th><th>الأول</th><th>الثاني</th><th>الثالث</th><th>الرابع</th><th>الخامس</th><th>بعد الخامس</th></tr></thead>
+              <tbody>
+                <tr><td>IF / CiteScore إلى مدرس</td><td>30</td><td>24</td><td>21</td><td>15</td><td>12</td><td>6</td></tr>
+                <tr><td>مجلات عراقية إلى مدرس</td><td>20</td><td>16</td><td>14</td><td>10</td><td>8</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" id="table2Calculator">
+          <h2>حاسبة نقاط الجدول رقم 2</h2>
+          <p class="muted">اختر الحالة وسيحسب البرنامج نقاطها مباشرة. اكتب في الوصف رقم الأمر الإداري أو اسم الكتاب أو التفاصيل المطلوبة، ثم اضغط إضافة لتثبيت الحالة وإضافتها إلى المجموع.</p>
+
+          <div class="result good" id="table2LiveSummary">
+            مجموع نقاط الجدول الثاني المثبتة: <strong>0</strong> نقطة. المطلوب للترقية إلى مدرس: 24 نقطة.
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label>الحالة / نوع النشاط</label>
+              <select id="activityType" onchange="updateActivityFields()"></select>
+            </div>
+            <div id="activityDynamicA">
+              <label>العدد / الدرجة</label>
+              <input id="activityQty" type="number" min="1" step="1" value="1" oninput="updateActivityPreview()" />
+            </div>
+            <div id="activityDynamicB">
+              <label>النقاط المحتسبة تلقائياً</label>
+              <input id="activityPoints" type="number" readonly value="0" />
+            </div>
+          </div>
+
+          <div class="form-grid" style="margin-top:12px">
+            <div>
+              <label>وصف النشاط / رقم الأمر الإداري</label>
+              <input id="activityName" placeholder="مثال: أمر إداري رقم ... بتاريخ ... / لجنة امتحانية" />
+            </div>
+            <div>
+              <label>ملاحظة الاحتساب</label>
+              <input id="activityNote" readonly />
+            </div>
+            <div>
+              <label>السقف الأعلى</label>
+              <input id="activityCap" readonly />
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn primary" onclick="addActivity()">إضافة وتثبيت الحالة</button>
+            <button class="btn ghost" onclick="clearActivities()">مسح النشاطات</button>
+          </div>
+
+          <div id="activityList" style="margin-top:14px"></div>
+          <div id="activityResult" class="result">مجموع الجدول الثاني: 0 نقطة.</div>
+
+          <div class="notice">
+            تضم هذه النسخة جميع فقرات الجدول رقم 2 الظاهرة في الدليل، من الفقرة 1 إلى الفقرة 34، مع الاحتساب التلقائي والسقوف العليا لكل فقرة قدر الإمكان.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="requirements" class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>قائمة تحقق مستندات المعاملة</h2>
+          <p class="muted">يمكنك التأشير على ما تم إنجازه. تحفظ الحالة داخل المتصفح مؤقتاً عبر localStorage.</p>
+          <div class="tabs">
+            <button class="tab active" data-tab="file1">الملف 1</button>
+            <button class="tab" data-tab="file2">الملف 2</button>
+            <button class="tab" data-tab="file3">الملف 3</button>
+            <button class="tab" data-tab="file4">الملف 4</button>
+          </div>
+          <div id="file1" class="tab-panel active checklist"></div>
+          <div id="file2" class="tab-panel checklist"></div>
+          <div id="file3" class="tab-panel checklist"></div>
+          <div id="file4" class="tab-panel checklist"></div>
+          <div class="actions-row">
+            <button class="btn" onclick="resetChecklist()">إلغاء جميع التأشيرات</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <div class="wrap grid two">
+        <div class="card">
+          <h2>مخطط سير معاملة الترقية</h2>
+          <div class="timeline">
+            <div class="step"><div class="dot">1</div><div class="body"><strong>طالب الترقية</strong><br><span class="muted">يقدم طلباً تحريرياً ومرفقات البحوث والنشاطات.</span></div></div>
+            <div class="step"><div class="dot">2</div><div class="body"><strong>رئاسة القسم / الفرع</strong><br><span class="muted">تدقيق أولي وإحالة للجان الرصانة والاستلال واللجنة العلمية.</span></div></div>
+            <div class="step"><div class="dot">3</div><div class="body"><strong>اللجنة العلمية</strong><br><span class="muted">تحديد الاختصاص، تدقيق الاستلال، احتساب نقاط الجدولين.</span></div></div>
+            <div class="step"><div class="dot">4</div><div class="body"><strong>لجنة الترقيات الفرعية</strong><br><span class="muted">تدقيق نهائي وإرسال للخبراء أو رفع للمركزية حسب المرتبة.</span></div></div>
+            <div class="step"><div class="dot">5</div><div class="body"><strong>مجلس الكلية ثم اللجنة المركزية</strong><br><span class="muted">توصية ومصادقة وإصدار أمر منح اللقب.</span></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>شروط عامة مهمة</h2>
+          <ul>
+            <li>البحوث يجب أن تكون ضمن مدة اللقب الحالي.</li>
+            <li>عدم استخدام البحث نفسه في جدول 1 وجدول 2 معاً.</li>
+            <li>فحص الرصانة والاستلال الورقي والإلكتروني شرط أساسي.</li>
+            <li>البحث المشترك يحتسب حسب ترتيب الباحث.</li>
+            <li>إضافة 5% تمنح لفئات محددة ولغرض استكمال النقاط فقط.</li>
+          </ul>
+          <div class="notice">يمكن لاحقاً إضافة صفحة خاصة بكل مادة من مواد التعليمات وربطها بمحرك بحث داخلي.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forms" class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>مولد طلب ترويج معاملة ترقية</h2>
+          <p class="muted">املأ البيانات وشاهد صيغة طلب أولية قابلة للنسخ أو الطباعة.</p>
+          <div class="form-grid">
+            <div><label>الاسم الرباعي</label><input id="fName" placeholder="اكتب الاسم الرباعي"></div>
+            <div><label>القسم</label><input id="fDept" placeholder="مثال: قسم علوم الحاسوب"></div>
+            <div><label>الاختصاص العام</label><input id="fSpec" placeholder="مثال: علوم حاسوب"></div>
+            <div><label>الاختصاص الدقيق</label><input id="fSubspec" placeholder="مثال: ذكاء اصطناعي"></div>
+            <div><label>من مرتبة</label><input id="fFrom" value="مدرس مساعد"></div>
+            <div><label>إلى مرتبة</label><input id="fTo" value="مدرس"></div>
+            <div><label>البريد الرسمي</label><input id="fEmail" placeholder="name@uomosul.edu.iq"></div>
+            <div><label>الهاتف دون المفتاح الدولي</label><input id="fPhone"></div>
+            <div><label>آخر شهادة علمية</label><input id="fDegree" placeholder="ماجستير / دكتوراه"></div>
+          </div>
+          <div style="margin-top:12px">
+            <label>عناوين البحوث وجهة النشر</label>
+            <textarea id="fResearch" placeholder="1- عنوان البحث / جهة النشر / التاريخ / منفرد أو مشترك"></textarea>
+          </div>
+          <div class="actions-row">
+            <button class="btn primary" onclick="generateForm()">توليد الطلب</button>
+            <button class="btn" onclick="copyForm()">نسخ الطلب</button>
+            <button class="btn ghost" onclick="window.print()">طباعة</button>
+          </div>
+          <div id="formOutput" class="print-card">سيظهر الطلب هنا.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="qa" class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>بحث سريع داخل الأسئلة الشائعة</h2>
+          <div class="searchbox">
+            <input id="qaSearch" placeholder="اكتب: مدة، نقاط، استلال، رصانة، جدول 2..." oninput="filterQA()" />
+          </div>
+          <div id="qaItems"></div>
+        </div>
+        <div class="preview-bar">
+          <div>
+            <strong>جاهز للرفع على GitHub Pages</strong>
+            <div style="opacity:.75">الملف الحالي يعمل بدون خادم وبدون مكتبات خارجية.</div>
+          </div>
+          <button class="btn warn" onclick="location.href='#eligibility'">جرّب الحاسبة الآن</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      إعداد نسخة تجريبية تفاعلية بناءً على الملفات المرفقة. يمكن تعديل النصوص والجداول وإضافة صفحات فرعية قبل النشر.
+    </div>
+  </footer>
+</div>
+
+<script>
+const rules = {
+  assistant_lecturer: {target:"مدرس", years:3, total:70, t1:46, t2:24, next:"lecturer"},
+  lecturer: {target:"أستاذ مساعد", years:4, total:80, t1:52, t2:28, next:"assistant_professor"},
+  assistant_professor: {target:"أستاذ", years:6, total:90, t1:59, t2:31, next:"professor"}
+};
+const researchPoints = {
+  lecturer: {
+    if: [30,24,21,15,12,6],
+    iraqi: [20,16,14,10,8,4]
+  },
+  assistant_professor: {
+    if: [20,16,14,10,8,4],
+    iraqi: [15,12,10.5,7.5,6,3]
+  },
+  professor: {
+    if: [20,16,14,10,8,4],
+    iraqi: [10,8,7,5,4,2]
+  }
+};
+const checkData = {
+  file1:["استمارة الترقيات العلمية رقم 1 و2","استمارة طلب الترقية","التعهدات القانونية","الأمر الجامعي للترقية السابقة","كتاب الاستمرارية بالخدمة","كتاب خلاصة الخدمة","تأييد دورة طرائق التدريس عند الحاجة","تأييد ممارسة التدريس للمراكز البحثية","الأمر الجامعي لشهادة الماجستير","الأمر الجامعي لشهادة الدكتوراه","صفحة العنوان والمستخلص وقائمة المحتويات للرسالة/الأطروحة"],
+  file2:["بحوث الترقية السابقة","بحوث الترقية الحالية مع محاضر التسجيل","مستندات النشاطات الأكاديمية للجدول 2"],
+  file3:["استمارة إجراء تدقيق القسم","تقارير الاستلال الإلكتروني والذكاء الاصطناعي","تقرير الاستلال العلمي الورقي","استمارة فحص الرصانة وصفحة الباحث في Scopus","إقرار اللجنة العلمية وجدول 1 وجدول 2 واستمارات التعضيد"],
+  file4:["تدقيق اللجنة الفرعية","تقارير التقييم العلمي للخبراء","إجراء مجلس الكلية","مصادقة رئاسة الجامعة","كتاب إحالة المعاملة إلى اللجنة المركزية"]
+};
+const qa = [
+  ["ما مدة الترقية من مدرس مساعد إلى مدرس؟","المدة القانونية لا تقل عن ثلاث سنوات من تاريخ الأمر الجامعي بمنح لقب مدرس مساعد، مع استيفاء النقاط والبحوث."],
+  ["كم نقطة أحتاج للترقية إلى مدرس؟","تحتاج 70 نقطة على الأقل: 46 من الجدول رقم 1 و24 من الجدول رقم 2."],
+  ["كيف تحتسب البحوث المشتركة؟","الباحث الأول 100%، الثاني 80%، الثالث 70%، الرابع 50%، الخامس 40%، وما بعد الخامس 20% من نقاط الباحث الأول."],
+  ["هل يمكن استخدام البحث نفسه في الجدولين؟","لا، لا يجوز استخدام البحث نفسه في الجدول رقم 1 والجدول رقم 2 معاً."],
+  ["ما الحد الأعلى للاستلال؟","حسب ما ورد في الدليل، الحد الأعلى المشار إليه هو 20% إجمالي و5% من مصدر واحد، مع مراعاة الاعمامات النافذة."],
+  ["متى أرفع المعاملة إلكترونياً؟","بعد تدقيقها أولياً من رئيس القسم وإشعار طالب الترقية بالشروع بالإجراءات الإلكترونية، وترفع الملفات بصيغة PDF."],
+  ["ما فائدة إضافة 5%؟","تضاف لفئات محددة وعن منصب واحد فقط، وتستخدم لغرض استكمال النقاط وليس بديلاً عن الشروط الأساسية."]
+];
+let researchId = 0;
+let activityRows = [];
+
+function todayISO(){
+  const d = new Date();
+  const tz = d.getTimezoneOffset()*60000;
+  return new Date(d - tz).toISOString().slice(0,10);
+}
+document.getElementById("todayDate").value = todayISO();
+
+function addYears(dateStr, years){
+  const d = new Date(dateStr+"T00:00:00");
+  d.setFullYear(d.getFullYear()+years);
+  return d;
+}
+function fmt(d){
+  return d.toLocaleDateString("ar-IQ", {year:"numeric",month:"2-digit",day:"2-digit"});
+}
+function isPositionBonusEligible(){
+  const has = document.getElementById("hasPositionBonus")?.value === "yes";
+  const half = document.getElementById("positionHalfDuration")?.value === "yes";
+  const current = document.getElementById("positionCurrent")?.value === "yes";
+  return has && half && current;
+}
+
+function getPositionBonusInfo(){
+  const t1 = parseFloat(document.getElementById("table1Input")?.value || 0);
+  const t2 = parseFloat(document.getElementById("table2Input")?.value || 0);
+  const base = t1 + t2;
+  const eligible = isPositionBonusEligible();
+  const value = eligible ? base * 0.05 : 0;
+  return {eligible, value, base};
+}
+
+function calcEligibility(){
+  const rank = document.getElementById("rank").value;
+  const r = rules[rank];
+  const start = document.getElementById("rankDate").value;
+  const today = document.getElementById("todayDate").value;
+  const t1 = parseFloat(document.getElementById("table1Input").value || 0);
+  const t2 = parseFloat(document.getElementById("table2Input").value || 0);
+  const bonus = isPositionBonusEligible();
+  if(!start || !today){return}
+  const due = addYears(start, r.years);
+  const td = new Date(today+"T00:00:00");
+  const timeOk = td >= due;
+  let total = t1 + t2;
+  let bonusVal = bonus ? total * 0.05 : 0;
+  let totalWithBonus = total + bonusVal;
+  const t1Ok = t1 >= r.t1;
+  const t2Ok = t2 >= r.t2;
+  const totalOk = totalWithBonus >= r.total;
+  const missing = Math.max(0, r.total - totalWithBonus);
+  const cls = (timeOk && t1Ok && t2Ok && totalOk) ? "good" : (timeOk ? "warn" : "bad");
+  const html = `
+    <h3>النتيجة الأولية للترقية إلى ${r.target}</h3>
+    <p>تاريخ إكمال المدة القانونية: <strong>${fmt(due)}</strong></p>
+    <p>${timeOk ? "✅ مستوفٍ شرط المدة." : "❌ غير مستوفٍ شرط المدة بعد."}</p>
+    <p>جدول 1: <strong>${t1}</strong> / المطلوب ${r.t1} ${t1Ok ? "✅" : "❌"}</p>
+    <p>جدول 2: <strong>${t2}</strong> / المطلوب ${r.t2} ${t2Ok ? "✅" : "❌"}</p>
+    <p>المجموع قبل الإضافة: <strong>${total.toFixed(2)}</strong></p>
+    ${bonus ? `<p>إضافة 5% للمناصب المشمولة: <strong>${bonusVal.toFixed(2)}</strong>، المجموع بعدها: <strong>${totalWithBonus.toFixed(2)}</strong></p>` : `<p>إضافة 5% للمناصب المشمولة: غير محتسبة.</p>`}
+    <p>${totalOk ? "✅ مستوفٍ مجموع النقاط." : "تحتاج تقريباً " + missing.toFixed(2) + " نقطة لاستكمال المجموع."}</p>
+    <div class="notice">النتيجة نهائية فقط بعد تدقيق الرصانة والاستلال والاختصاص والبحوث والمستندات من اللجان المختصة.</div>
+  `;
+  const box = document.getElementById("eligibilityResult");
+  box.className = "result " + cls;
+  box.innerHTML = html;
+  syncTopSummary();
+}
+function fillExample(){
+  document.getElementById("rank").value = "assistant_lecturer";
+  document.getElementById("rankDate").value = "2023-04-03";
+  document.getElementById("table1Input").value = "50";
+  document.getElementById("table2Input").value = "20";
+  document.getElementById("hasPositionBonus").value = "no";
+  document.getElementById("positionHalfDuration").value = "no";
+  document.getElementById("positionCurrent").value = "no";
+  calcEligibility();
+}
+
+function researchRow(type="if", position=1){
+  const id = ++researchId;
+  return `<div class="research-row" data-id="${id}">
+    <div><label>نوع المجلة</label><select class="rType" onchange="recalcResearch()">
+      <option value="if" ${type=="if"?"selected":""}>IF أو CiteScore</option>
+      <option value="iraqi" ${type=="iraqi"?"selected":""}>عراقية معتمدة</option>
+    </select></div>
+    <div><label>ترتيبك في البحث</label><select class="rPos" onchange="recalcResearch()">
+      <option value="1" ${position==1?"selected":""}>الباحث الأول</option>
+      <option value="2" ${position==2?"selected":""}>الباحث الثاني</option>
+      <option value="3" ${position==3?"selected":""}>الباحث الثالث</option>
+      <option value="4" ${position==4?"selected":""}>الباحث الرابع</option>
+      <option value="5" ${position==5?"selected":""}>الباحث الخامس</option>
+      <option value="6" ${position==6?"selected":""}>بعد الباحث الخامس</option>
+    </select></div>
+    <div><label>النقاط</label><input class="rPoints" readonly /></div>
+    <button class="btn ghost" onclick="this.closest('.research-row').remove();recalcResearch()">حذف</button>
+  </div>`;
+}
+function addResearch(type, position){
+  const t = type || document.getElementById("defaultType").value;
+  document.getElementById("researchList").insertAdjacentHTML("beforeend", researchRow(t, position || 1));
+  recalcResearch();
+}
+function addUserScenario(){
+  clearResearch(false);
+  addResearch("if",1); addResearch("if",2); addResearch("if",3);
+}
+function clearResearch(update=true){
+  document.getElementById("researchList").innerHTML = "";
+  if(update) recalcResearch();
+}
+function recalcResearch(){
+  const target = document.getElementById("targetRank").value;
+  let total = 0, count = 0;
+  document.querySelectorAll(".research-row").forEach(row=>{
+    const type = row.querySelector(".rType").value;
+    const pos = parseInt(row.querySelector(".rPos").value,10);
+    const val = researchPoints[target][type][Math.min(pos,6)-1];
+    row.querySelector(".rPoints").value = val;
+    total += val; count++;
+  });
+  const min = target=="lecturer" ? 46 : target=="assistant_professor" ? 52 : 59;
+  const result = document.getElementById("researchResult");
+  result.className = "result " + (total>=min ? "good" : "warn");
+  result.innerHTML = count ? `عدد البحوث: <strong>${count}</strong>، مجموع نقاط الجدول رقم 1: <strong>${total}</strong> من الحد الأدنى المطلوب ${min}. ${total>=min?"✅":"تحتاج "+(min-total).toFixed(1)+" نقطة."}` : "لم تتم إضافة بحوث بعد.";
+  document.getElementById("table1Input").value = total.toFixed(1).replace(".0","");
+  syncTopSummary();
+}
+
+const activityDefs = {
+  book_local_solo: {label:"1- كتاب مؤلف/مترجم محلي - منفرد - ISBN", mode:"fixed", points:8, note:"كتاب مؤلف أو مترجم محلي، منفرد، حاصل على ISBN.", capText:"8 نقاط"},
+  book_local_one: {label:"1- كتاب مؤلف/مترجم محلي - مشترك مع مؤلف واحد - ISBN", mode:"fixed", points:5, note:"كتاب مؤلف أو مترجم محلي، مشترك مع مؤلف واحد، حاصل على ISBN.", capText:"5 نقاط"},
+  book_local_two: {label:"1- كتاب مؤلف/مترجم محلي - مشترك مع مؤلفين - ISBN", mode:"fixed", points:3, note:"كتاب مؤلف أو مترجم محلي، مشترك مع مؤلفين، حاصل على ISBN.", capText:"3 نقاط"},
+  book_global_solo: {label:"1- كتاب مؤلف/مترجم عالمي - منفرد - ISBN", mode:"fixed", points:10, note:"كتاب مؤلف أو مترجم عالمي، منفرد، حاصل على ISBN.", capText:"10 نقاط"},
+  book_global_one: {label:"1- كتاب مؤلف/مترجم عالمي - مشترك مع مؤلف واحد - ISBN", mode:"fixed", points:8, note:"كتاب مؤلف أو مترجم عالمي، مشترك مع مؤلف واحد، حاصل على ISBN.", capText:"8 نقاط"},
+  book_global_two: {label:"1- كتاب مؤلف/مترجم عالمي - مشترك مع مؤلفين - ISBN", mode:"fixed", points:5, note:"كتاب مؤلف أو مترجم عالمي، مشترك مع مؤلفين، حاصل على ISBN.", capText:"5 نقاط"},
+
+  book_chapter: {label:"2- فصل كتاب Book Chapter", mode:"qty", per:5, cap:6, group:"book_chapter", note:"5 نقاط لكل فصل، على ألا يزيد المجموع على 6 نقاط.", capText:"6 نقاط"},
+  conference_paper: {label:"3- بحث منشور في مؤتمر علمي", mode:"qty", per:5, cap:5, group:"conference_paper", maxCount:1, note:"5 نقاط لبحث منشور في مؤتمر علمي داخل العراق أو خارجه. يعتمد بحث مؤتمر واحد فقط.", capText:"5 نقاط / بحث واحد"},
+  community_study_in: {label:"4- دراسة علمية تعالج مشكلة في المجتمع العراقي - في التخصص", mode:"fixed", points:10, group:"community_study", maxCount:1, note:"دراسة في التخصص، على ألا تزيد على دراسة علمية واحدة، مقدمة إلى جهة رسمية ومصادق عليها ومنشورة.", capText:"10 نقاط / دراسة واحدة"},
+  community_study_out: {label:"4- دراسة علمية تعالج مشكلة في المجتمع العراقي - خارج التخصص", mode:"fixed", points:5, group:"community_study", maxCount:1, note:"دراسة خارج التخصص، على ألا تزيد على دراسة علمية واحدة، مقدمة إلى جهة رسمية ومصادق عليها ومنشورة.", capText:"5 نقاط / دراسة واحدة"},
+
+  citations: {label:"5- الاستشهاد بالبحوث المنشورة في Scopus والمجلات المحلية", mode:"citations", cap:5, group:"citations", note:"نقطة لكل 10 استشهادات، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  review_article_case: {label:"6- مقال مراجعة Review أو دراسة حالة Case Study", mode:"qty", per:5, cap:10, group:"review_article_case", note:"5 نقاط لكل مقال، على ألا تزيد على مقالين، وتخضع للاستلال الإلكتروني والعلمي، وتكون منشورة في مجلات مصنفة ضمن الربع الأول أو الثاني أو الثالث ومستوفية لشروط المادة 9.", capText:"10 نقاط / مقالان"},
+  public_platform_article: {label:"7- مقال علمي في مجلة عامة أو منصة عامة غير محكمة", mode:"qty", per:2, cap:5, group:"public_platform_article", note:"نقطتان لكل مقال، على ألا تزيد على 5 نقاط، وأن تكون المجلة أو المنصة صادرة عن جهة علمية أو جامعة أو مؤسسة معنية بالنشر ومعتمدة من الوزارة.", capText:"5 نقاط"},
+  patent_global: {label:"8- براءة اختراع دولية", mode:"fixed", points:25, group:"patent", maxCount:1, note:"براءة اختراع دولية، على ألا تزيد على واحدة، مصادق عليها من الجهات الرسمية وتخضع للاستلال الإلكتروني.", capText:"25 نقطة / واحدة"},
+  patent_local: {label:"8- براءة اختراع محلية", mode:"fixed", points:5, group:"patent", maxCount:1, note:"براءة اختراع محلية، على ألا تزيد على واحدة، مصادق عليها من الجهات الرسمية وتخضع للاستلال الإلكتروني.", capText:"5 نقاط / واحدة"},
+
+  award_global: {label:"9- وسام أو جائزة أو ميدالية دولية", mode:"fixed", points:10, note:"أوسمة أو جوائز ممنوحة من جامعات عالمية مصنفة ضمن تصنيف شنغهاي أو جهات/أولمبيات على المستوى القاري أو الدولي، بأمر أو مرسوم رسمي.", capText:"10 نقاط"},
+  award_local: {label:"9- وسام أو جائزة أو ميدالية محلية", mode:"fixed", points:3, note:"أوسمة علمية ممنوحة من وزارة التعليم العالي والجهات الرسمية ذات العلاقة.", capText:"3 نقاط"},
+  evaluate_inside: {label:"10- تقييم بحث علمي أو مراجعة كتاب داخل العراق", mode:"qty", per:1, cap:5, group:"evaluate_inside", note:"نقطة لكل تقييم، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  evaluate_outside: {label:"10- تقييم بحث علمي أو مراجعة كتاب خارج العراق", mode:"qty", per:2, cap:6, group:"evaluate_outside", note:"نقطتان لكل تقييم، على ألا يزيد المجموع على 6 نقاط.", capText:"6 نقاط"},
+  thesis_eval: {label:"10- تقييم الرسائل والأطاريح لغوياً أو علمياً أو إحصائياً", mode:"qty", per:1, cap:5, group:"thesis_eval", note:"أدخل عدد التقييمات. عوملت افتراضياً كنقطة لكل تقييم ويمكن تعديلها يدوياً إن وجّهت اللجنة بخلاف ذلك.", capText:"5 نقاط"},
+  exam_committee: {label:"11- المشاركة في اللجان الامتحانية", mode:"qty", per:1, cap:5, group:"exam_committee", note:"نقطة عن كل لجنة، على ألا تزيد على 5 نقاط، وتعتمد لجنة واحدة لكل عام دراسي.", capText:"5 نقاط"},
+  discussion_committee: {label:"12- لجان مناقشة الدبلوم العالي والماجستير والدكتوراه والبورد العراقي", mode:"qty", per:1, cap:5, group:"discussion_committee", note:"نقطة عن كل لجنة مناقشة، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  scientific_promotion_committee: {label:"13- اللجان العلمية ولجان الترقيات العلمية", mode:"qty", per:1, cap:5, group:"scientific_promotion_committee", note:"نقطة عن كل لجنة، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+
+  iraqi_academics_syndicate: {label:"14- العضوية في نقابة الأكاديميين العراقية", mode:"fixed", points:3, group:"membership", cap:6, note:"3 نقاط، ويشترك سقف هذه الفقرة مع فقرة العضويات بما لا يزيد على 6 نقاط.", capText:"6 نقاط مع العضويات"},
+  professional_membership: {label:"15- العضوية في النقابات الأكاديمية المهنية والجمعيات العلمية ضمن الاختصاص", mode:"qty", per:1, cap:6, group:"membership", note:"نقطة واحدة للعضوية داخل أو خارج العراق، على ألا يزيد المجموع مع الفقرة 14 على 6 نقاط.", capText:"6 نقاط"},
+  conference_committee: {label:"16- لجان المؤتمرات: تحضيرية / علمية / استقبال", mode:"qty", per:1, cap:5, group:"conference_committee", note:"نقطة عن كل مؤتمر، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  seminar_workshop_committee: {label:"17- عضو في لجان الندوات وورش العمل", mode:"qty", per:1, cap:5, group:"seminar_workshop_committee", note:"نقطة عن كل لجنة، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  ministerial_committee: {label:"18- اللجان الوزارية داخل وخارج الوزارة", mode:"qty", per:1, cap:5, group:"ministerial_committee", note:"نقطة عن كل لجنة، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  department_creation_committee: {label:"19- لجان استحداث الأقسام العلمية", mode:"qty", per:1, cap:5, group:"department_creation_committee", note:"نقطة عن كل لجنة، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  course_lecturer: {label:"20- محاضر في دورات تدريبية أو التعليم المستمر", mode:"qty", per:1, cap:5, group:"course_lecturer", note:"نقطة عن كل دورة، على ألا تزيد على 5 نقاط، ويجب أن تكون صادرة بأمر مع تأييد إقامة الدورة.", capText:"5 نقاط"},
+  educational_guidance: {label:"21- الإرشاد التربوي / الإشراف التربوي", mode:"qty", per:1, cap:5, group:"educational_guidance", note:"نقطة عن كل تكليف، على ألا يزيد المجموع على 5 نقاط.", capText:"5 نقاط"},
+  supervision_diploma_master_one: {label:"22- الإشراف على طلبة الدبلوم العالي/الماجستير - طالب واحد", mode:"fixed", points:2, group:"supervision_grad", note:"طالب واحد في الدبلوم العالي أو الماجستير داخل أو خارج العراق.", capText:"2 نقطتان"},
+  supervision_diploma_master_multi: {label:"22- الإشراف على طلبة الدبلوم العالي/الماجستير - طالبين أو أكثر", mode:"fixed", points:4, group:"supervision_grad", note:"طالبان أو أكثر في الدبلوم العالي أو الماجستير داخل أو خارج العراق.", capText:"4 نقاط"},
+  supervision_phd_board_one: {label:"22- الإشراف على الدكتوراه/البورد العراقي - طالب واحد", mode:"fixed", points:3, group:"supervision_phd", note:"طالب واحد في الدكتوراه أو البورد العراقي.", capText:"3 نقاط"},
+  supervision_phd_board_multi: {label:"22- الإشراف على الدكتوراه/البورد العراقي - طالبين أو أكثر", mode:"fixed", points:6, group:"supervision_phd", note:"طالبان أو أكثر في الدكتوراه أو البورد العراقي.", capText:"6 نقاط"},
+
+  student_extra_activity: {label:"23- النشاطات اللاصفية للطلبة", mode:"qty", per:1, cap:5, group:"student_extra_activity", note:"نقطة عن كل مشاركة: إشراف على ابتكار/تصنيع، عمل تطويري طلابي، أو مهرجان ثقافي/رياضي/فني. السقف 5 نقاط.", capText:"5 نقاط"},
+  internal_departments: {label:"24- الإشراف على الأقسام الداخلية", mode:"qty", per:2, cap:6, group:"internal_departments", note:"نقطتان عن كل عام تكليف، على ألا يزيد المجموع على 6 نقاط.", capText:"6 نقاط"},
+  educational_cooperation: {label:"25- تعاون تربوي مع جامعات ومنظمات علمية", mode:"qty", per:2, cap:6, group:"educational_cooperation", note:"نقطتان عن كل تعاون، على ألا يزيد المجموع على 6 نقاط.", capText:"6 نقاط"},
+  teaching_hospitals: {label:"26- العمل في المستشفيات التعليمية", mode:"fixed", points:15, group:"teaching_hospitals", maxCount:1, note:"العمل السريري للمجموعة الطبية حصراً، لسنة تقويمية ولمرة واحدة.", capText:"15 نقطة"},
+  editor_chief: {label:"27- رئيس أو مدير تحرير مجلة علمية معتمدة", mode:"fixed", points:10, note:"رئيس أو مدير تحرير مجلة علمية معتمدة.", capText:"10 نقاط"},
+  editorial_board: {label:"28- عضو هيئة تحرير مجلة علمية معتمدة", mode:"fixed", points:5, note:"عضو في هيئة تحرير مجلة علمية معتمدة.", capText:"5 نقاط"},
+  hindex_extra: {label:"29- الحصول على مؤشر هيرتش H-index أعلى من المطلوب", mode:"qty", per:1, cap:10, group:"hindex_extra", note:"نقطة واحدة لكل قيمة من H-index من Scopus تزيد عن القيمة المطلوبة للترقية، على ألا تزيد على 10 نقاط.", capText:"10 نقاط"},
+  sports_ministry: {label:"30- الإسهام في الأنشطة الرياضية للوزارة", mode:"fixed", points:2, group:"sports_ministry", maxCount:1, note:"نقطتان وفق اعمام دائرة المالية والإدارية الذي يحدد الحد الأدنى لمبلغ التبرع اختيارياً.", capText:"2 نقطتان"},
+  employment_graduates: {label:"31- الإسهام في توظيف الخريجين وإيجاد فرص عمل لهم", mode:"qty", per:1, cap:5, group:"employment_graduates", note:"نقطة لكل إسهام، على أن يكون موثقاً بكتاب من مساعد رئيس الجامعة للشؤون العلمية.", capText:"5 نقاط"},
+  inventory_committee: {label:"32- المشاركة في لجان الجرد", mode:"qty", per:1, cap:3, group:"inventory_committee", note:"نقطة لكل لجنة لكل سنة صادرة بأمر وزاري أو جامعي أو إداري، على ألا تزيد على 3 نقاط.", capText:"3 نقاط"},
+  performance: {label:"33- معدل تقييم الأداء", mode:"performance", note:"70-79 = 4 نقاط، 80-89 = 6 نقاط، 90-99 = 8 نقاط.", capText:"حسب معدل الأداء"},
+  creative_activity: {label:"34- نشاطات إبداعية وأعمال مميزة أخرى", mode:"qty", per:1, cap:2, group:"creative_activity", note:"نقطة واحدة عن كل نشاط، على ألا تزيد على نقطتين، وتكون موثقة رسمياً من القسم العلمي ومصادقاً عليها في مجلس الكلية.", capText:"2 نقطتان"},
+  manual: {label:"إدخال يدوي لحالة تحتاج قرار اللجنة", mode:"manual", note:"استخدمها فقط عند وجود حالة خاصة أو تعارض في تفسير النقاط، ثم تدققها لجنة الترقيات.", capText:"حسب الضوابط"}
+};
+
+function initActivityOptions(){
+  const select = document.getElementById("activityType");
+  if(!select) return;
+  select.innerHTML = Object.entries(activityDefs).map(([key,def]) => `<option value="${key}">${def.label}</option>`).join("");
+  select.value = "performance";
+  updateActivityFields();
+}
+
+function activityPointsFrom(def){
+  const qtyEl = document.getElementById("activityQty");
+  const raw = parseFloat(qtyEl.value || 0);
+  if(def.mode === "performance"){
+    const score = raw;
+    if(score >= 90 && score <= 99) return 8;
+    if(score >= 80 && score <= 89) return 6;
+    if(score >= 70 && score <= 79) return 4;
+    return 0;
+  }
+  if(def.mode === "fixed") return def.points || 0;
+  if(def.mode === "qty") return (raw || 0) * (def.per || 0);
+  if(def.mode === "citations") return Math.floor((raw || 0) / 10);
+  if(def.mode === "manual") return raw || 0;
+  return 0;
+}
+
+function getGroupTotal(group){
+  if(!group) return 0;
+  return activityRows.filter(x=>x.group===group).reduce((s,x)=>s+x.pts,0);
+}
+
+function getGroupCount(group){
+  if(!group) return 0;
+  return activityRows.filter(x=>x.group===group).length;
+}
+
+function applyCaps(def, rawPoints){
+  let pts = rawPoints;
+  let warning = "";
+  if(def.maxCount && getGroupCount(def.group) >= def.maxCount){
+    return {points:0, warning:"تم بلوغ الحد المسموح لهذه الفقرة ولا يمكن إضافة حالة أخرى."};
+  }
+  if(def.cap && def.group){
+    const remaining = Math.max(0, def.cap - getGroupTotal(def.group));
+    if(pts > remaining){
+      warning = "تم تطبيق السقف الأعلى لهذه الفقرة؛ النقاط المحتسبة أقل من النقاط الخام.";
+      pts = remaining;
+    }
+  } else if(def.cap){
+    pts = Math.min(pts, def.cap);
+  }
+  return {points:pts, warning};
+}
+
+function updateActivityFields(){
+  const key = document.getElementById("activityType").value;
+  const def = activityDefs[key];
+  const qty = document.getElementById("activityQty");
+  const labelA = document.querySelector("#activityDynamicA label");
+  if(def.mode === "performance"){
+    labelA.textContent = "معدل تقييم الأداء";
+    qty.min = 0; qty.max = 99; qty.step = 1;
+    if(!qty.value || qty.value === "1") qty.value = 90;
+  } else if(def.mode === "fixed"){
+    labelA.textContent = "العدد";
+    qty.min = 1; qty.max = 1; qty.step = 1; qty.value = 1;
+  } else if(def.mode === "citations"){
+    labelA.textContent = "عدد الاستشهادات";
+    qty.min = 0; qty.removeAttribute("max"); qty.step = 1;
+    if(!qty.value || Number(qty.value) < 10) qty.value = 10;
+  } else if(def.mode === "manual"){
+    labelA.textContent = "النقاط اليدوية";
+    qty.min = 0; qty.removeAttribute("max"); qty.step = 0.5;
+    if(!qty.value) qty.value = 1;
+  } else {
+    labelA.textContent = "عدد المشاركات / اللجان / التقييمات";
+    qty.min = 1; qty.removeAttribute("max"); qty.step = 1;
+    if(!qty.value || Number(qty.value) < 1) qty.value = 1;
+  }
+  document.getElementById("activityNote").value = def.note || "";
+  document.getElementById("activityCap").value = def.capText || "";
+  updateActivityPreview();
+}
+
+function updateActivityPreview(){
+  const def = activityDefs[document.getElementById("activityType").value];
+  const raw = activityPointsFrom(def);
+  const capped = applyCaps(def, raw);
+  document.getElementById("activityPoints").value = capped.points;
+}
+
+function syncTopSummary(){
+  const t1 = parseFloat(document.getElementById("table1Input")?.value || 0);
+  const t2 = parseFloat(document.getElementById("table2Input")?.value || 0);
+  const bonusInfo = getPositionBonusInfo();
+  const finalTotal = t1 + t2 + bonusInfo.value;
+
+  const topT1 = document.getElementById("topT1");
+  const topT2 = document.getElementById("topT2");
+  const topTotal = document.getElementById("topTotal");
+  if(topT1){ topT1.textContent = t1.toFixed(1).replace(".0",""); }
+  if(topT2){ topT2.textContent = t2.toFixed(1).replace(".0",""); }
+  if(topTotal){ topTotal.textContent = finalTotal.toFixed(2).replace(".00",""); }
+
+  const bonusView = document.getElementById("bonusValueView");
+  const statusView = document.getElementById("bonusStatusView");
+  if(bonusView){ bonusView.value = bonusInfo.value.toFixed(2); }
+  if(statusView){
+    if(bonusInfo.eligible){
+      statusView.value = "محتسبة: " + (document.getElementById("positionType")?.value || "منصب مشمول");
+    } else {
+      const has = document.getElementById("hasPositionBonus")?.value === "yes";
+      statusView.value = has ? "غير مكتملة الشروط" : "غير محتسبة";
+    }
+  }
+
+  const summary = document.getElementById("globalPointsSummary");
+  if(summary){
+    summary.innerHTML = `<strong>المجموع الحالي:</strong>
+      جدول 1 = <span id="topT1">${t1.toFixed(1).replace(".0","")}</span> نقطة،
+      جدول 2 = <span id="topT2">${t2.toFixed(1).replace(".0","")}</span> نقطة،
+      إضافة 5% = <span>${bonusInfo.value.toFixed(2)}</span>،
+      الكلي = <span id="topTotal">${finalTotal.toFixed(2).replace(".00","")}</span> نقطة.`;
+  }
+}
+
+function addActivity(){
+  const key = document.getElementById("activityType").value;
+  const def = activityDefs[key];
+  const rawPts = activityPointsFrom(def);
+  const capped = applyCaps(def, rawPts);
+  const pts = capped.points;
+  const name = document.getElementById("activityName").value || def.label;
+  const qty = document.getElementById("activityQty").value || "";
+  activityRows.push({type:key, group:def.group || key, name, qty, pts, rawPts, note:def.note, warning:capped.warning});
+  document.getElementById("activityName").value = "";
+  renderActivities();
+  updateActivityPreview();
+}
+
+function clearActivities(){
+  activityRows=[];
+  renderActivities();
+}
+
+function renderActivities(){
+  let total = activityRows.reduce((s,x)=>s+x.pts,0);
+  document.getElementById("activityList").innerHTML = activityRows.length ? `<table><thead><tr><th>الحالة</th><th>الوصف / الأمر الإداري</th><th>العدد أو الدرجة</th><th>النقاط الخام</th><th>النقاط المحتسبة</th><th>ملاحظة</th><th></th></tr></thead><tbody>${activityRows.map((x,i)=>`<tr><td>${activityDefs[x.type]?.label || x.type}</td><td>${x.name}</td><td>${x.qty}</td><td>${x.rawPts ?? x.pts}</td><td><strong>${x.pts}</strong></td><td>${x.warning || ""}</td><td><button class="btn ghost" onclick="activityRows.splice(${i},1);renderActivities();updateActivityPreview()">حذف</button></td></tr>`).join("")}</tbody></table>` : "";
+  document.getElementById("activityResult").className = "result " + (total>=24 ? "good":"warn");
+  document.getElementById("activityResult").innerHTML = `مجموع الجدول الثاني المثبت: <strong>${total}</strong> نقطة. ${total>=24?"✅ مستوفٍ للحد الأدنى لمرتبة مدرس.":"للمدرس تحتاج 24 نقطة على الأقل."}`;
+  const live = document.getElementById("table2LiveSummary");
+  if(live){
+    live.className = "result " + (total>=24 ? "good":"warn");
+    live.innerHTML = `مجموع نقاط الجدول الثاني المثبتة: <strong>${total}</strong> نقطة. ${total>=24?"✅ مكتمل لمرتبة مدرس.":"المتبقي لمرتبة مدرس: " + Math.max(0,24-total).toFixed(1).replace(".0","") + " نقطة."}`;
+  }
+  document.getElementById("table2Input").value = total.toFixed(1).replace(".0","");
+  syncTopSummary();
+}
+
+function initChecklist(){
+  Object.entries(checkData).forEach(([file,items])=>{
+    const el = document.getElementById(file);
+    el.innerHTML = items.map((txt,i)=>{
+      const key = `chk_${file}_${i}`;
+      const checked = localStorage.getItem(key)==="1" ? "checked" : "";
+      return `<label class="check-item"><input type="checkbox" ${checked} onchange="localStorage.setItem('${key}',this.checked?'1':'0')"><span>${txt}</span></label>`;
+    }).join("");
+  });
+}
+function resetChecklist(){
+  Object.keys(localStorage).filter(k=>k.startsWith("chk_")).forEach(k=>localStorage.removeItem(k));
+  initChecklist();
+}
+document.querySelectorAll(".tab").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".tab,.tab-panel").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.tab).classList.add("active");
+  })
+});
+
+function generateForm(){
+  const research = (document.getElementById("fResearch").value || "تدرج عناوين البحوث هنا").replaceAll("\n","<br>");
+  const html = `
+    <h3 style="text-align:center">السيد رئيس قسم ${val("fDept")} المحترم</h3>
+    <h3 style="text-align:center">م/ ترويج معاملة ترقية</h3>
+    <p>تحية طيبة...</p>
+    <p>أرجو التفضل بالموافقة على ترويج معاملة الترقية من مرتبة <strong>${val("fFrom")}</strong> إلى مرتبة <strong>${val("fTo")}</strong>، وتزويدي بحساب لغرض تقديم المعاملة إلكترونياً، وحسب المعلومات المدرجة أدناه:</p>
+    <ol>
+      <li>الاسم الرباعي: ${val("fName")}</li>
+      <li>الاختصاص العام: ${val("fSpec")}</li>
+      <li>الاختصاص الدقيق: ${val("fSubspec")}</li>
+      <li>الإيميل الرسمي: ${val("fEmail")}</li>
+      <li>رقم الهاتف بدون المفتاح الدولي: ${val("fPhone")}</li>
+      <li>آخر شهادة علمية: ${val("fDegree")}</li>
+      <li>المرتبة المطلوبة للترقية: ${val("fTo")}</li>
+    </ol>
+    <p><strong>البحوث المقدمة للترقية:</strong><br>${research}</p>
+    <p style="margin-top:30px">مع التقدير</p>
+    <p>التوقيع:<br>الاسم: ${val("fName")}<br>التاريخ: ${new Date().toLocaleDateString("ar-IQ")}</p>
+  `;
+  document.getElementById("formOutput").innerHTML = html;
+}
+function val(id){return document.getElementById(id).value || ".............."}
+async function copyForm(){
+  const text = document.getElementById("formOutput").innerText;
+  await navigator.clipboard.writeText(text);
+  alert("تم نسخ الطلب");
+}
+function initQA(){
+  document.getElementById("qaItems").innerHTML = qa.map(([q,a])=>`<div class="qa-item show" data-text="${q} ${a}"><h3>${q}</h3><p class="muted">${a}</p></div>`).join("");
+}
+function filterQA(){
+  const q = document.getElementById("qaSearch").value.trim().toLowerCase();
+  document.querySelectorAll(".qa-item").forEach(item=>{
+    item.classList.toggle("show", !q || item.dataset.text.toLowerCase().includes(q));
+  });
+}
+document.querySelectorAll("#nav a").forEach(a=>{
+  a.addEventListener("click",()=>{
+    document.querySelectorAll("#nav a").forEach(x=>x.classList.remove("active"));
+    a.classList.add("active");
+  })
+});
+initChecklist();
+initQA();
+initActivityOptions();
+["table1Input","table2Input"].forEach(id=>document.getElementById(id)?.addEventListener("input", syncTopSummary));
+addUserScenario();
+calcEligibility();
+</script>
+</body>
+</html>
