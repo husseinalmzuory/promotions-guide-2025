@@ -326,7 +326,7 @@ setTimeout(()=>{const x=document.getElementById('fullscreenHint'); if(x) x.style
             </div>
             <div>
               <label>تاريخ الحصول على اللقب الحالي</label>
-              <input id="rankDate" type="date" value="2023-04-03" />
+              <input id="rankDate" type="date" />
             </div>
             <div>
               <label>تاريخ اليوم / تاريخ التقديم</label>
@@ -347,9 +347,9 @@ setTimeout(()=>{const x=document.getElementById('fullscreenHint'); if(x) x.style
           </div>
           <div class="actions-row">
             <button class="btn primary" onclick="calcEligibility()">احسب الاستحقاق</button>
-            <button class="btn" onclick="fillExample()">تعبئة مثال المستخدم</button>
+            <button class="btn" onclick="fillExample()">تعبئة مثال تجريبي</button>
           </div>
-          <div id="eligibilityResult" class="result">أدخل البيانات ثم اضغط زر الحساب.</div>
+          <div id="eligibilityResult" class="result">أدخل تاريخ الحصول على اللقب ونقاطك ثم اضغط زر الحساب.</div>
         </div>
 
         <div class="grid three">
@@ -397,10 +397,10 @@ setTimeout(()=>{const x=document.getElementById('fullscreenHint'); if(x) x.style
           </div>
           <div id="researchList" class="research-list" style="margin-top:14px"></div>
           <div class="actions-row">
-            <button class="btn" onclick="addUserScenario()">مثال: الأول + الثاني + الثالث</button>
+            <button class="btn" onclick="addUserScenario()">تعبئة مثال تجريبي: الأول + الثاني + الثالث</button>
             <button class="btn ghost" onclick="clearResearch()">مسح البحوث</button>
           </div>
-          <div id="researchResult" class="result">لم تتم إضافة بحوث بعد.</div>
+          <div id="researchResult" class="result">لم تتم إضافة بحوث بعد. اضغط "إضافة بحث" ليبدأ المستخدم بإدخال بحوثه.</div>
           <div style="overflow:auto;margin-top:16px">
             <table>
               <thead><tr><th>نوع المجلة</th><th>الأول</th><th>الثاني</th><th>الثالث</th><th>الرابع</th><th>الخامس</th><th>بعد الخامس</th></tr></thead>
@@ -647,7 +647,13 @@ function calcEligibility(){
   const t1 = parseFloat(document.getElementById("table1Input").value || 0);
   const t2 = parseFloat(document.getElementById("table2Input").value || 0);
   const bonus = isPositionBonusEligible();
-  if(!start || !today){return}
+  if(!start || !today){
+    const box = document.getElementById("eligibilityResult");
+    box.className = "result warn";
+    box.innerHTML = "يرجى إدخال تاريخ الحصول على اللقب الحالي وتاريخ التقديم أولاً.";
+    syncTopSummary();
+    return;
+  }
   const due = addYears(start, r.years);
   const td = new Date(today+"T00:00:00");
   const timeOk = td >= due;
@@ -1019,8 +1025,9 @@ initChecklist();
 initQA();
 initActivityOptions();
 ["table1Input","table2Input"].forEach(id=>document.getElementById(id)?.addEventListener("input", syncTopSummary));
-addUserScenario();
-calcEligibility();
+clearResearch();
+clearActivities();
+syncTopSummary();
 </script>
 </body>
 </html>
